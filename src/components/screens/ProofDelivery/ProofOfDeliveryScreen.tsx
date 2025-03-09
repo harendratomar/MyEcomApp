@@ -22,7 +22,7 @@ const ProofOfDeliveryScreen: React.FC = ({ navigation }: any) => {
   const [comments, setComments] = useState<string>("");
   const [rating, setRating] = useState<number>(0);
   const { t } = useTranslation();
-  const { colors } = useTheme(); // Get theme colors
+  const { colors } = useTheme();
 
   const capturePhoto = async () => {
     const hasPermission = await requestCameraPermission();

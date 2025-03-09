@@ -58,12 +58,12 @@ const AppNavigator = () => {
 
   return (
     <NavigationContainer theme={appTheme}>
-      <Stack.Navigator initialRouteName="Splash">
-        <Stack.Screen
+      <Stack.Navigator initialRouteName="Login">
+        {/* <Stack.Screen
           name="Splash"
           component={Splash}
           options={{ headerShown: false }}
-        />
+        /> */}
 
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen

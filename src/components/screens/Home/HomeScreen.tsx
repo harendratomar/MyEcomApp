@@ -12,8 +12,7 @@ import {
 import { useSelector } from "react-redux";
 import { RootState } from "../../../Redux/Store";
 import { NavigationProp } from "@react-navigation/native";
-import { fetchProducts } from "../../../services/api"; // Adjust the import path as needed
-import ThemeSwitcher from "../ThemeProvider/index";
+import { fetchProducts } from "../../../services/api";
 import { useTranslation } from "react-i18next";
 
 interface Product {
@@ -108,24 +107,6 @@ const HomeScreen: React.FC<Props> = ({ navigation }) => {
 
   return (
     <View style={[styles.container, theme === "dark" && styles.darkBackground]}>
-      <ThemeSwitcher />
-      <TouchableOpacity
-        style={[
-          styles.dynamicButton,
-          theme === "dark" ? styles.darkButton : styles.lightButton,
-        ]}
-        onPress={() => navigation.navigate("ProofOfDelivery")}
-      >
-        <Text
-          style={[
-            styles.dynamicButtonText,
-            theme === "dark" && styles.darkButtonText,
-          ]}
-        >
-          {t("Proof of Delivery")}
-        </Text>
-      </TouchableOpacity>
-
       <Text
         style={[
           { fontSize: 22 },

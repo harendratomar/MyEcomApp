@@ -2,8 +2,8 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 # Getting Started
 ## Login crudential:
-#User name:emilys
-#Password:emilyspass
+#User name: emilys
+#Password: emilyspass
 
 > **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
 ## Step 0: npm i
